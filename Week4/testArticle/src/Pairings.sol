@@ -15,4 +15,11 @@ contract Pairings {
         }
         revert("Wrong pairing");
     }
+    function run2(bytes calldata input) public view returns (bool) {
+        // optional, the precompile checks this too and reverts (with no error) if false, this helps narrow down possible errors
+        if (input.length % 192 != 0) revert("Points must be a multiple of 6");
+        (bool success, bytes memory data) = address(0x08).staticcall(input);
+        if (success) return abi.decode(data, (bool));
+        revert("Wrong pairing");
+    }
 }
