@@ -1,0 +1,13 @@
+1,1,0,main.isAllOne
+2,2,0,main.x[0]
+3,3,0,main.x[1]
+4,4,0,main.x[2]
+5,5,0,main.x[3]
+6,6,0,main.x[4]
+7,-1,0,main.tmp[0]
+8,7,0,main.tmp[1]
+9,8,0,main.tmp[2]
+10,9,0,main.tmp[3]
+11,10,0,main.tmp[4]
+12,-1,0,main.product
+13,-1,0,main.isProductOne
