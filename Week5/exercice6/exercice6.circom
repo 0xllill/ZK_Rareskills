@@ -36,3 +36,6 @@ template IsPowerOfTwo(n) {
 }
 
 component main = IsPowerOfTwo(32);  // Adjust 32 based on the maximum expected value of v
+
+
+//E 
